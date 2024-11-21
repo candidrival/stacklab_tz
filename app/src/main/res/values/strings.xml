@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">TestReminder</string>
+    <string name="add_task">Add Task</string>
+    <string name="add_your_task_first">Add your Task first…</string>
+    <string name="push_desk">Hurry up! Don’t forget your task :)</string>
+    <string name="add_task_title">Make your own Reminder.</string>
+    <string name="title">Title</string>
+    <string name="hint">Tugas PPL</string>
+    <string name="time">Time</string>
+    <string name="calendar">Calendar</string>
+    <string name="repeat">Repeat</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string-array name="repeat_mode">
+        <item>Once</item>
+        <item>Daily</item>
+        <item>Monday to Friday</item>
+    </string-array>
+    <string name="grant_our_app_permission_to_notifications_to_work_correctly">Grant our app permission to send notifications to work correctly.</string>
+    <string name="permissions_needed">Permissions needed</string>
+    <string name="grant">Grant</string>
+    <string name="cancel">Cancel</string>
+    <string name="reminders_notification_channel_id">Test Reminder Channel</string>
+
+</resources>

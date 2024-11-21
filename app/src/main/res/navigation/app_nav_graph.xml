@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav_graph"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.stacklab_tz.presentation.main.MainScreenFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/main_fragment">
+        <action
+            android:id="@+id/mainFragment_to_addTaskFragment"
+            app:destination="@id/addTaskFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left">
+
+            <argument
+                android:name="taskId"
+                app:argType="integer"/>
+
+            <argument
+                android:name="isEdit"
+                app:argType="integer" />
+
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/addTaskFragment"
+        android:name="com.example.stacklab_tz.presentation.add_task.AddTaskFragment"
+        android:label="AddTaskFragment"
+        tools:layout="@layout/add_task_fragment">
+
+        <argument
+            android:name="taskId"
+            app:argType="integer"/>
+
+        <argument
+            android:name="isEdit"
+            app:argType="integer" />
+    </fragment>
+</navigation>
